@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 // Creating the context
  const OrderContext = createContext();
 
-// Provider que vai envolver o app
+
 export const OrderProvider = ({ children }) => {
   const [orders, setOrders] = useState([]);
   const [selectedItems, setSelectedItems] = useState({});

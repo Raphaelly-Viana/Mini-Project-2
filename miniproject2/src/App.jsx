@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import logo from "./assets/Bakery.webp";
 import { OrderProvider } from "./Context/OrderContext";
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
@@ -28,13 +29,8 @@ function App() {
             </Link>
           </nav>
         </header>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-      </div>
+<AppRoutes />
+            </div>
     </OrderProvider>
   );
 }
